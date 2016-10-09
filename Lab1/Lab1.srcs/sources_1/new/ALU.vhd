@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 
 
 entity ALU is
-    Port ( Input : in STD_LOGIC_VECTOR (7 downto 0);
+    port ( Input : in STD_LOGIC_VECTOR (7 downto 0);
            OpCode : in STD_LOGIC_VECTOR (4 downto 0);
            button, clk : in std_logic; 
            s0, s1, s2, s3 : inout STD_LOGIC;
@@ -15,10 +15,11 @@ entity ALU is
 end ALU;
 
 architecture Behavioral of ALU is
-signal A0, B0 : std_logic_vector (7 downto 0);  --8-bit register values. 
-signal segA, segB : std_logic := '0'; --Used to display A and B on the segment displays. 
-signal prevbutton, clkprev : std_logic := '0'; --Used to record previous values of signals.
-signal clkdiv : std_logic_vector (16 downto 0) := "00000000000000000";
+
+    signal A0, B0 : std_logic_vector (7 downto 0);  --8-bit register values. 
+    signal segA, segB : std_logic := '0'; --Used to display A and B on the segment displays. 
+    signal prevbutton, clkprev : std_logic := '0'; --Used to record previous values of signals.
+    signal clkdiv : std_logic_vector (16 downto 0) := "00000000000000000";
 
 begin
 
