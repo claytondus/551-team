@@ -49,16 +49,17 @@ start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param gui.test TreeTableDev
-  set_param xicom.use_bs_reader 1
   debug::add_scope template.lib 1
+  create_project -in_memory -part xc7a200tfbg676-2
+  set_property board_part xilinx.com:ac701:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir C:/Users/jdavi194/Documents/551/Lab1/Lab1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/jdavi194/Documents/551/Lab1/Lab1.xpr [current_project]
-  set_property ip_repo_paths c:/Users/jdavi194/Documents/551/Lab1/Lab1.cache/ip [current_project]
-  set_property ip_output_repo c:/Users/jdavi194/Documents/551/Lab1/Lab1.cache/ip [current_project]
-  add_files -quiet C:/Users/jdavi194/Documents/551/Lab1/Lab1.runs/synth_1/ALU.dcp
-  read_xdc C:/Users/jdavi194/Downloads/Nexys4_Master.xdc
-  link_design -top ALU -part xc7a100tcsg324-1
+  set_property webtalk.parent_dir /home/cd/src/551-team/Lab1/Lab1.cache/wt [current_project]
+  set_property parent.project_path /home/cd/src/551-team/Lab1/Lab1.xpr [current_project]
+  set_property ip_repo_paths /home/cd/src/551-team/Lab1/Lab1.cache/ip [current_project]
+  set_property ip_output_repo /home/cd/src/551-team/Lab1/Lab1.cache/ip [current_project]
+  add_files -quiet /home/cd/src/551-team/Lab1/Lab1.runs/synth_1/ALU.dcp
+  read_xdc /home/cd/src/551-team/Lab1/Nexys4_Master.xdc
+  link_design -top ALU -part xc7a200tfbg676-2
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -118,21 +119,5 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-}
-
-start_step write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  write_bitstream -force ALU.bit 
-  if { [file exists C:/Users/jdavi194/Documents/551/Lab1/Lab1.runs/synth_1/ALU.hwdef] } {
-    catch { write_sysdef -hwdef C:/Users/jdavi194/Documents/551/Lab1/Lab1.runs/synth_1/ALU.hwdef -bitfile ALU.bit -meminfo ALU.mmi -file ALU.sysdef }
-  }
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
 }
 

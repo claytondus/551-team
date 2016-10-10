@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Oct  9 23:24:50 2016
+# Process ID: 26587
+# Log file: /home/cd/src/551-team/Lab1/Lab1.runs/synth_2/ALU.vds
+# Journal file: /home/cd/src/551-team/Lab1/Lab1.runs/synth_2/vivado.jou
+#-----------------------------------------------------------
+source ALU.tcl

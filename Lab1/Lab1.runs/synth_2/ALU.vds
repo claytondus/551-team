@@ -1,0 +1,345 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Oct  9 23:24:50 2016
+# Process ID: 26587
+# Log file: /home/cd/src/551-team/Lab1/Lab1.runs/synth_2/ALU.vds
+# Journal file: /home/cd/src/551-team/Lab1/Lab1.runs/synth_2/vivado.jou
+#-----------------------------------------------------------
+source ALU.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {Common-41} -limit 4294967295
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/cd/src/551-team/Lab1/Lab1.cache/wt [current_project]
+# set_property parent.project_path /home/cd/src/551-team/Lab1/Lab1.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# read_vhdl -library xil_defaultlib {
+#   /home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/constants.vhd
+#   /home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd
+# }
+# read_xdc /home/cd/src/551-team/Lab1/Lab1.srcs/Nexys4DDR/imports/Downloads/Nexys4DDR_Master.xdc
+# set_property used_in_implementation false [get_files /home/cd/src/551-team/Lab1/Lab1.srcs/Nexys4DDR/imports/Downloads/Nexys4DDR_Master.xdc]
+# catch { write_hwdef -file ALU.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top ALU -part xc7a100tcsg324-1
+Command: synth_design -top ALU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 862.242 ; gain = 130.727 ; free physical = 728 ; free virtual = 2681
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU' [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:18]
+INFO: [Synth 8-226] default block is never used [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:27]
+INFO: [Synth 8-226] default block is never used [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:27]
+INFO: [Synth 8-226] default block is never used [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:27]
+INFO: [Synth 8-226] default block is never used [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:27]
+INFO: [Synth 8-226] default block is never used [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:27]
+INFO: [Synth 8-226] default block is never used [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (1#1) [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:18]
+WARNING: [Synth 8-3917] design ALU has port one driven by constant 1
+WARNING: [Synth 8-3917] design ALU has port one2 driven by constant 1
+WARNING: [Synth 8-3917] design ALU has port one3 driven by constant 1
+WARNING: [Synth 8-3917] design ALU has port one4 driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 897.477 ; gain = 165.961 ; free physical = 691 ; free virtual = 2644
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 897.477 ; gain = 165.961 ; free physical = 691 ; free virtual = 2644
+---------------------------------------------------------------------------------
+Loading clock regions from /home/cd/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from /home/cd/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from /home/cd/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from /home/cd/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/PinFunctions.xml...
+Loading package from /home/cd/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from /home/cd/Xilinx/Vivado/2014.4/data/./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from /home/cd/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/cd/src/551-team/Lab1/Lab1.srcs/Nexys4DDR/imports/Downloads/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [/home/cd/src/551-team/Lab1/Lab1.srcs/Nexys4DDR/imports/Downloads/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1198.688 ; gain = 0.000 ; free physical = 498 ; free virtual = 2450
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 497 ; free virtual = 2449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 497 ; free virtual = 2449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 497 ; free virtual = 2449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:55]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 479 ; free virtual = 2432
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 5     
+	  16 Input      7 Bit        Muxes := 4     
+	  18 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	  18 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 5     
+	  16 Input      7 Bit        Muxes := 4     
+	  18 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	  18 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 479 ; free virtual = 2432
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'B0_reg[7:0]' into 'B0_reg[7:0]' [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:56]
+INFO: [Synth 8-4471] merging register 'A0_reg[7:0]' into 'A0_reg[7:0]' [/home/cd/src/551-team/Lab1/Lab1.srcs/sources_1/new/ALU.vhd:55]
+WARNING: [Synth 8-3917] design ALU has port one driven by constant 1
+WARNING: [Synth 8-3917] design ALU has port one2 driven by constant 1
+WARNING: [Synth 8-3917] design ALU has port one3 driven by constant 1
+WARNING: [Synth 8-3917] design ALU has port one4 driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 479 ; free virtual = 2432
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 479 ; free virtual = 2432
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 471 ; free virtual = 2423
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 471 ; free virtual = 2423
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 471 ; free virtual = 2423
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 471 ; free virtual = 2423
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 428 ; free virtual = 2381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 428 ; free virtual = 2381
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 416 ; free virtual = 2368
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 416 ; free virtual = 2368
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 416 ; free virtual = 2368
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 416 ; free virtual = 2368
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |    18|
+|4     |LUT2   |    23|
+|5     |LUT3   |    40|
+|6     |LUT4   |    60|
+|7     |LUT5   |    55|
+|8     |LUT6   |   109|
+|9     |MUXF7  |     3|
+|10    |FDRE   |    42|
+|11    |FDSE   |     7|
+|12    |IBUF   |    15|
+|13    |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   425|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 416 ; free virtual = 2368
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1198.688 ; gain = 87.234 ; free physical = 416 ; free virtual = 2368
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1198.688 ; gain = 467.172 ; free physical = 416 ; free virtual = 2368
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1198.688 ; gain = 388.445 ; free physical = 409 ; free virtual = 2362
+# write_checkpoint -noxdef ALU.dcp
+# catch { report_utilization -file ALU_utilization_synth.rpt -pb ALU_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1206.691 ; gain = 0.000 ; free physical = 408 ; free virtual = 2361
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  9 23:25:13 2016...

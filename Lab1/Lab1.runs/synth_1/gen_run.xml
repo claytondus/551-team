@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1474557237">
-  <File Type="RDS-DCP" Name="ALU.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1476042540">
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
-  <File Type="RDS-UTIL-PB" Name="ALU_utilization_synth.pb"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
-  <File Type="RDS-PROPCONSTRS" Name="ALU_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="ALU.tcl"/>
+  <File Type="VDS-HWDEF" Name="ALU.hwdef"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="PA-TCL" Name="ALU.tcl"/>
   <File Type="RDS-RDS" Name="ALU.vds"/>
-  <File Type="RDS-UTIL" Name="ALU_utilization_synth.rpt"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ALU_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="ALU_timing_summary_synth.pb"/>
-  <File Type="VDS-HWDEF" Name="ALU.hwdef"/>
+  <File Type="RDS-DCP" Name="ALU.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="ALU_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="ALU_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="ALU_drc_synth.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
@@ -28,7 +28,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../Downloads/Nexys4_Master.xdc">
+    <File Path="$PPRDIR/Nexys4_Master.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
