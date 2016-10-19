@@ -1,0 +1,812 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Oct 19 18:31:37 2016
+# Process ID: 5800
+# Current directory: C:/Users/clayton/src/551-lab2/551-lab2.runs/synth_1
+# Command line: vivado.exe -log square_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source square_top.tcl
+# Log file: C:/Users/clayton/src/551-lab2/551-lab2.runs/synth_1/square_top.vds
+# Journal file: C:/Users/clayton/src/551-lab2/551-lab2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source square_top.tcl -notrace
+Command: synth_design -top square_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9008 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 286.387 ; gain = 77.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'square_top' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:44]
+	Parameter hwbuild bound to: 8'b00000000 
+	Parameter interrupt_vector bound to: 12'b001111111111 
+	Parameter scratch_pad_memory_size bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'kcpsm6' declared at 'C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:87' bound to instance 'processor' of component 'kcpsm6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'kcpsm6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:111]
+	Parameter hwbuild bound to: 8'b00000000 
+	Parameter interrupt_vector bound to: 12'b001111111111 
+	Parameter scratch_pad_memory_size bound to: 64 - type: integer 
+	Parameter INIT bound to: 64'b1111111111111111111101010101010100000000000000000000111011101110 
+INFO: [Synth 8-113] binding component instance 'reset_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:685]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'run_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:696]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'internal_reset_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:701]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'sync_sleep_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:706]
+	Parameter INIT bound to: 64'b0000000010000011000000000000101100000000110001000000000001001100 
+INFO: [Synth 8-113] binding component instance 't_state_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:711]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 't_state1_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:722]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 't_state2_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:727]
+	Parameter INIT bound to: 64'b0000000000010000000000000000000000000000000000000000100000000000 
+INFO: [Synth 8-113] binding component instance 'int_enable_type_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:733]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000001100101010101010 
+INFO: [Synth 8-113] binding component instance 'interrupt_enable_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:744]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'interrupt_enable_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:754]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'sync_interrupt_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:759]
+	Parameter INIT bound to: 64'b1100110000110011111111110000000010000000100000001000000010000000 
+INFO: [Synth 8-113] binding component instance 'active_interrupt_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:764]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'active_interrupt_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:775]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'interrupt_ack_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:780]
+	Parameter INIT bound to: 64'b0101101000111100111111111111111100000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_move_is_valid_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:804]
+	Parameter INIT bound to: 64'b0111011101110111000000100111011100000000000000000000001000000000 
+INFO: [Synth 8-113] binding component instance 'move_type_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:814]
+	Parameter INIT bound to: 64'b0000000000000000111100000000000000000000000000000010001111111111 
+INFO: [Synth 8-113] binding component instance 'pc_mode1_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:825]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111100000000000001000000000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_mode2_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:836]
+	Parameter INIT bound to: 64'b1111111111111111000100000000000000000000000000000010000000000000 
+INFO: [Synth 8-113] binding component instance 'push_pop_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:846]
+	Parameter INIT bound to: 64'b0000001111001010000000000000000000000100001000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'alu_decode0_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:861]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'alu_mux_sel0_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:872]
+	Parameter INIT bound to: 64'b0111011100001000000000000000000000000000000000000000111100000000 
+INFO: [Synth 8-113] binding component instance 'alu_decode1_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:877]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'alu_mux_sel1_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:888]
+	Parameter INIT bound to: 64'b1101000000000000000000000000000000000010000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'alu_decode2_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:894]
+	Parameter INIT bound to: 64'b0000000000000001001111110011111100000000000100001111011111001110 
+INFO: [Synth 8-113] binding component instance 'register_enable_type_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:909]
+	Parameter INIT bound to: 64'b1100000011001100000000000000000010100000101010100000000000000000 
+INFO: [Synth 8-113] binding component instance 'register_enable_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:920]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'flag_enable_flop' to cell 'FDR' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:931]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'register_enable_flop' to cell 'FDR' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:937]
+	Parameter INIT bound to: 64'b1000000000000000000000000000000000100000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'spm_enable_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:943]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'k_write_strobe_flop' to cell 'FDR' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:954]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'spm_enable_flop' to cell 'FDR' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:960]
+	Parameter INIT bound to: 64'b0100000000000000000000000000000000000001000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'read_strobe_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:966]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'write_strobe_flop' to cell 'FDR' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:977]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'read_strobe_flop' to cell 'FDR' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:983]
+	Parameter INIT bound to: 64'b0000000010000000000000100000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'regbank_type_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1001]
+	Parameter INIT bound to: 64'b1010110010101100111111110000000011111111000000001111111100000000 
+INFO: [Synth 8-113] binding component instance 'bank_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1011]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'bank_flop' to cell 'FDR' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1021]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'sx_addr4_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1027]
+INFO: [Synth 8-113] binding component instance 'arith_carry_xorcy' to cell 'XORCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1051]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'arith_carry_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1056]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000010000111011110000000000000000000 
+INFO: [Synth 8-113] binding component instance 'lower_parity_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1061]
+INFO: [Synth 8-113] binding component instance 'parity_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1072]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'upper_parity_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1078]
+INFO: [Synth 8-113] binding component instance 'parity_xorcy' to cell 'XORCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1088]
+	Parameter INIT bound to: 64'b1111111111111111101010101100110011110000111100001111000011110000 
+INFO: [Synth 8-113] binding component instance 'shift_carry_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1093]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'shift_carry_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1103]
+	Parameter INIT bound to: 64'b0011001100110011101010101100110011110000101010100000000000000000 
+INFO: [Synth 8-113] binding component instance 'carry_flag_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1108]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'carry_flag_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1119]
+INFO: [Synth 8-113] binding component instance 'init_zero_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1126]
+	Parameter INIT bound to: 64'b1010001010000000000000000000000000000000111100000000000011110000 
+INFO: [Synth 8-113] binding component instance 'use_zero_flag_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1132]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'use_zero_flag_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1143]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-113] binding component instance 'lower_zero_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1148]
+INFO: [Synth 8-113] binding component instance 'lower_zero_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1159]
+	Parameter INIT bound to: 64'b0000000000000000000000000000110100000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'middle_zero_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1165]
+INFO: [Synth 8-113] binding component instance 'middle_zero_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1176]
+	Parameter INIT bound to: 64'b1111101111111111000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'upper_zero_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1182]
+INFO: [Synth 8-113] binding component instance 'upper_zero_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1192]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'zero_flag_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1198]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1264]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111100110011110011000000111100000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1350]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1366]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1371]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1249]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1264]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1249]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1264]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1249]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1264]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1249]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:1411]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000010101010000000000000000011001100110011001111000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000010101010000000000000000011001100110011001111000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000010101001010011010101010101010101010101010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1011111110111100100011111000110010110011101100001000001110000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'kcpsm6' (1#1) [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/kpcsm6.vhd:111]
+	Parameter C_FAMILY bound to: V6 - type: string 
+	Parameter C_RAM_SIZE_KWORDS bound to: 2 - type: integer 
+	Parameter C_JTAG_LOADER_ENABLE bound to: 1 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'program_rom' of component 'square_prog' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:227]
+INFO: [Synth 8-226] default block is never used [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:269]
+INFO: [Synth 8-226] default block is never used [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:128]
+INFO: [Synth 8-226] default block is never used [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:128]
+INFO: [Synth 8-226] default block is never used [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:128]
+INFO: [Synth 8-226] default block is never used [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:128]
+INFO: [Synth 8-226] default block is never used [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:128]
+INFO: [Synth 8-256] done synthesizing module 'square_top' (2#1) [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:44]
+WARNING: [Synth 8-3917] design square_top has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 323.973 ; gain = 114.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 323.973 ; gain = 114.723
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'square_prog' instantiated as 'program_rom' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:227]
+INFO: [Netlist 29-17] Analyzing 180 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'DP'. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:77]
+Finished Parsing XDC File [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/square_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/clayton/src/551-lab2/551-lab2.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/square_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/square_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 124 instances were transformed.
+  FD => FDRE: 48 instances
+  FDR => FDRE: 20 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 50 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 4 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 633.996 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'digits_carry_reg' and it is trimmed from '8' to '4' bits. [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module square_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design square_top has port dp driven by constant 1
+INFO: [Synth 8-3886] merging instance 'seg_reg[6]' (FDE) to 'an_reg[1]'
+INFO: [Synth 8-3886] merging instance 'seg_reg[5]' (FDE) to 'seg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'seg_reg[4]' (FDE) to 'seg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'seg_reg[3]' (FDE) to 'seg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'seg_reg[2]' (FDE) to 'seg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'seg_reg[1]' (FDE) to 'seg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'seg_reg[0]' (FDE) to 'an_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\an_reg[0] )
+INFO: [Synth 8-3886] merging instance 'an_reg[1]' (FDE) to 'an_reg[2]'
+INFO: [Synth 8-3886] merging instance 'an_reg[2]' (FDE) to 'an_reg[3]'
+INFO: [Synth 8-3886] merging instance 'an_reg[3]' (FDE) to 'an_reg[4]'
+INFO: [Synth 8-3886] merging instance 'an_reg[4]' (FDE) to 'an_reg[5]'
+INFO: [Synth 8-3886] merging instance 'an_reg[5]' (FDE) to 'an_reg[6]'
+INFO: [Synth 8-3886] merging instance 'an_reg[6]' (FDE) to 'an_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\an_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (processor/k_write_strobe_flop) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (processor/write_strobe_flop) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (processor/read_strobe_flop) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (current_digit_reg[7]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[0] with 1st driver pin 'current_digit_reg[7]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[0] with 2nd driver pin 'VCC' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net ROTATE_LEFT[0] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+WARNING: [Synth 8-3332] Sequential element (current_digit_reg[6]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[7] with 1st driver pin 'current_digit_reg[6]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[7] with 2nd driver pin 'VCC' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net ROTATE_LEFT[7] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+WARNING: [Synth 8-3332] Sequential element (current_digit_reg[5]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[6] with 1st driver pin 'current_digit_reg[5]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[6] with 2nd driver pin 'VCC' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net ROTATE_LEFT[6] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+WARNING: [Synth 8-3332] Sequential element (current_digit_reg[4]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[5] with 1st driver pin 'current_digit_reg[4]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[5] with 2nd driver pin 'VCC' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net ROTATE_LEFT[5] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+WARNING: [Synth 8-3332] Sequential element (current_digit_reg[3]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[4] with 1st driver pin 'current_digit_reg[3]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[4] with 2nd driver pin 'VCC' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net ROTATE_LEFT[4] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+WARNING: [Synth 8-3332] Sequential element (current_digit_reg[2]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[3] with 1st driver pin 'current_digit_reg[2]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[3] with 2nd driver pin 'VCC' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net ROTATE_LEFT[3] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+WARNING: [Synth 8-3332] Sequential element (current_digit_reg[1]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[2] with 1st driver pin 'current_digit_reg[1]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[2] with 2nd driver pin 'VCC' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net ROTATE_LEFT[2] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+WARNING: [Synth 8-3332] Sequential element (current_digit_reg[0]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[1] with 1st driver pin 'current_digit_reg[0]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ROTATE_LEFT[1] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net ROTATE_LEFT[1] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:154]
+WARNING: [Synth 8-3332] Sequential element (digits_low_reg[7]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 1st driver pin 'digits_low_reg[7]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[3] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+WARNING: [Synth 8-3332] Sequential element (digits_low_reg[6]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 1st driver pin 'digits_low_reg[6]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[2] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+WARNING: [Synth 8-3332] Sequential element (digits_low_reg[5]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 1st driver pin 'digits_low_reg[5]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[1] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+WARNING: [Synth 8-3332] Sequential element (digits_low_reg[4]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 1st driver pin 'digits_low_reg[4]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[0] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+WARNING: [Synth 8-3332] Sequential element (digits_low_reg[3]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 1st driver pin 'digits_low_reg[3]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[3] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+WARNING: [Synth 8-3332] Sequential element (digits_low_reg[2]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 1st driver pin 'digits_low_reg[2]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[2] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+WARNING: [Synth 8-3332] Sequential element (digits_low_reg[1]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 1st driver pin 'digits_low_reg[1]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[1] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+WARNING: [Synth 8-3332] Sequential element (digits_low_reg[0]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 1st driver pin 'digits_low_reg[0]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[0] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:159]
+WARNING: [Synth 8-3332] Sequential element (digits_high_reg[7]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 1st driver pin 'digits_high_reg[7]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[3] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+WARNING: [Synth 8-3332] Sequential element (digits_high_reg[6]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 1st driver pin 'digits_high_reg[6]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[2] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+WARNING: [Synth 8-3332] Sequential element (digits_high_reg[5]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 1st driver pin 'digits_high_reg[5]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[1] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+WARNING: [Synth 8-3332] Sequential element (digits_high_reg[4]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 1st driver pin 'digits_high_reg[4]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[0] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+WARNING: [Synth 8-3332] Sequential element (digits_high_reg[3]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 1st driver pin 'digits_high_reg[3]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[3] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+WARNING: [Synth 8-3332] Sequential element (digits_high_reg[2]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 1st driver pin 'digits_high_reg[2]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[2] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+WARNING: [Synth 8-3332] Sequential element (digits_high_reg[1]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 1st driver pin 'digits_high_reg[1]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[1] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+WARNING: [Synth 8-3332] Sequential element (digits_high_reg[0]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 1st driver pin 'digits_high_reg[0]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[0] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:158]
+WARNING: [Synth 8-3332] Sequential element (digits_carry_reg[3]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 1st driver pin 'digits_carry_reg[3]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[3] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[3] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (digits_carry_reg[2]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 1st driver pin 'digits_carry_reg[2]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[2] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[2] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (digits_carry_reg[1]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 1st driver pin 'digits_carry_reg[1]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[1] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[1] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (digits_carry_reg[0]) is unused and will be removed from module square_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 1st driver pin 'digits_carry_reg[0]/Q' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sel0[0] with 2nd driver pin 'GND' [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net sel0[0] is connected to constant driver, other driver is ignored [C:/Users/clayton/src/551-lab2/551-lab2.srcs/sources_1/new/square_top.vhd:160]
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[0]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[1]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[2]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[3]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[4]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[5]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[6]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[7]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[8]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[9]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[10]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[11]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[12]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[13]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[14]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[15]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[16]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (clkprev_reg) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (an_reg[0]) is unused and will be removed from module square_top.
+WARNING: [Synth 8-3332] Sequential element (an_reg[7]) is unused and will be removed from module square_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |square_prog   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |square_prog_bbox |     1|
+|2     |BUFG             |     1|
+|3     |LUT3             |     9|
+|4     |LUT4             |     1|
+|5     |LUT6             |    29|
+|6     |LUT6_2           |    45|
+|7     |MUXCY            |    29|
+|8     |RAM32M           |     4|
+|9     |RAM64M           |     2|
+|10    |XORCY            |    27|
+|11    |FD               |    48|
+|12    |FDR              |    17|
+|13    |FDRE             |    25|
+|14    |IBUF             |    18|
+|15    |OBUF             |    16|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+------------+-------+------+
+|      |Instance    |Module |Cells |
++------+------------+-------+------+
+|1     |top         |       |   290|
+|2     |  processor |kcpsm6 |   225|
++------+------------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 633.996 ; gain = 424.746
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 84 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 633.996 ; gain = 112.387
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 633.996 ; gain = 424.746
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 190 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 126 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 10 instances
+  FD => FDRE: 48 instances
+  FDR => FDRE: 17 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 45 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 65 Warnings, 84 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 633.996 ; gain = 424.746
+INFO: [Common 17-1381] The checkpoint 'C:/Users/clayton/src/551-lab2/551-lab2.runs/synth_1/square_top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 633.996 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 19 18:32:10 2016...
